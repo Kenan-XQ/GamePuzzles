@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <newsimooc.imooc.com.view.GameLayout
+        android:id="@+id/id_game"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+    </newsimooc.imooc.com.view.GameLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/id_game"
+        android:layout_margin="3dp">
+
+        <TextView
+            android:id="@+id/level_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="难度等级："
+            android:textSize="30dp"
+            android:textColor="#8A2BE2"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_toRightOf="@id/level_textview"
+            android:id="@+id/id_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="#EA7821"
+            android:text="1" />
+
+        <!--
+        <TextView
+            android:id="@+id/id_time"
+            android:layout_alignParentRight="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="60"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="#EA7821"
+            android:background="@drawable/textbg"/>
+            -->
+
+    </RelativeLayout>
+</RelativeLayout>
